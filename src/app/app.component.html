@@ -1,3 +1,13 @@
 <h1>
   {{title}}
 </h1>
+<hr/>
+  <div >
+    <a [routerLink]="['']">Home</a> |
+    <input type="text" #id (input)="0"/>
+    <a [routerLink]="['user', id.value]">User</a>
+    <a [routerLink]="['aboutus']">About us</a>
+  </div>
+<hr/>
+
+<router-outlet></router-outlet>
